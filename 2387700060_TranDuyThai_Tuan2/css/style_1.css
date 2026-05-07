@@ -1,0 +1,74 @@
+body {
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #777777;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Raleway-Bold', sans-serif;
+    color: #1b1b1b;
+    letter-spacing: 2px;
+    padding: 60px 0 30px 0;
+}
+
+.about-content h3 {
+    font-size: 26px;
+    font-family: 'Raleway-Bold', sans-serif;
+    color: #3c3c3c;
+    font-weight: 100;
+}
+
+.btn-readmore {
+    background: none;
+    border: 3px solid #76daff;
+    font-size: 12px;
+    font-family: 'Raleway-Bold', sans-serif;
+    color: #3c3c3c;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .title, 
+body.dark-mode .about-content h3,
+body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .card,
+body.dark-mode .list-group-item {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+body.dark-mode .bg-light {
+    background-color: #2d2d2d !important;
+    color: #f8f8f2;
+}
+
+body.dark-mode .btn-readmore {
+    color: #ffffff;
+    border-color: #76daff;
+}
+
+/* Custom spacing */
+.info-card {
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+@media screen and (max-width: 992px) {
+    .about-img, .about-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
