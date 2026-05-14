@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bài tập cá nhân 1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #87CEEB;
+      color: #000;
+    }
+
+    /* Header / Title section */
+    .page-title {
+      background-color: #fff;
+      padding: 16px 20px 8px 20px;
+      border-bottom: 3px solid #e87722;
+    }
+
+    .page-title h1 {
+      color: #e87722;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Main content */
+    .container {
+      background-color: #5BB8F5;
+      padding: 20px 24px;
+      min-height: 100vh;
+    }
+
+    /* Page heading */
+    .main-heading {
+      font-size: 22px;
+      font-weight: bold;
+      color: #000080;
+      margin-bottom: 16px;
+    }
+
+    /* Introduction line */
+    .intro-line {
+      font-size: 15px;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .intro-line input[type="text"] {
+      border: 2px solid #333;
+      background-color: #ccc;
+      padding: 2px 8px;
+      font-size: 14px;
+      width: 140px;
+    }
+
+    /* Bold text */
+    .bold { font-weight: bold; }
+
+    /* Italic text */
+    .italic { font-style: italic; }
+
+    /* Underline */
+    .underline { text-decoration: underline; }
+
+    /* Strikethrough */
+    .strike { text-decoration: line-through; }
+
+    /* Highlight */
+    .highlight {
+      background-color: #FFD700;
+      padding: 0 2px;
+    }
+
+    /* Hobby list */
+    .hobby-section {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .hobby-section p {
+      margin-bottom: 4px;
+    }
+
+    ol.hobby-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 6px 0 10px 0;
+    }
+
+    ol.hobby-list li {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    ol.hobby-list li:nth-child(2) {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    ol.hobby-list li:nth-child(3) {
+      font-style: italic;
+      color: #333;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #a0c8e8;
+      margin: 12px 0;
+    }
+
+    /* Code section */
+    .code-label {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .code-block {
+      background-color: #5BB8F5;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      padding: 6px 0;
+      color: #000;
+      margin-bottom: 12px;
+    }
+
+    /* Quote / Motto */
+    .motto-section {
+      font-size: 15px;
+      margin-top: 4px;
+    }
+
+    blockquote {
+      margin: 10px 0 0 30px;
+      font-style: italic;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    blockquote .author {
+      text-align: right;
+      font-style: normal;
+      font-weight: normal;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page Title -->
+  <div class="page-title">
+    <h1>Bài tập vận dụng 1</h1>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Page Heading -->
+    <p class="main-heading">TRANG WEB CÁ NHÂN</p>
+
+    <!-- Introduction -->
+    <p class="intro-line">
+      Xin chào! Tôi là <input type="text" value="Trần Duy Thái" readonly /> - MSSV: 2387700060 - Lớp: 23DATA1
+    </p>
+
+    <!-- Likes -->
+    <p class="intro-line">
+      Tôi <span class="bold">THÍCH</span> <em>học hỏi</em>, <span class="underline">phát triển ứng dụng web</span>, và <span class="highlight">giải quyết các vấn đề phức tạp</span>
+    </p>
+
+    <!-- Dislikes -->
+    <p class="intro-line">
+      Tôi <span class="bold">KHÔNG THÍCH</span> <span class="strike">người lười biếng</span>
+    </p>
+
+    <!-- Hobbies -->
+    <div class="hobby-section">
+      <p>Một số sở thích của tôi bao gồm:</p>
+      <ol class="hobby-list">
+        <li>1 - Ăn</li>
+        <li>2 - Ngủ</li>
+        <li>3 - Xem phim</li>
+      </ol>
+    </div>
+
+    <hr />
+
+    <!-- Code Section -->
+    <p class="code-label">Dưới đây là một đoạn mã nguồn <span class="bold">Python</span> đơn giản:</p>
+    <div class="code-block">
+      <code>print("Hello, World!")</code>
+    </div>
+
+    <hr />
+
+    <!-- Motto Section -->
+    <p class="motto-section">Châm ngôn yêu thích của tôi:</p>
+    <blockquote>
+      "Không gì là không thể. (You can)"<br/>
+      <span class="author">— freddyfartbear</span>
+    </blockquote>
+
+  </div>
+
+</body>
+</html>
