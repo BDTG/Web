@@ -1,0 +1,34 @@
+@model Category
+
+<h1>Delete Category</h1>
+
+<div class="alert alert-danger">
+    <h3>Are you sure you want to delete this category?</h3>
+    @if (Model.Products.Any())
+    {
+        <p class="mb-0">This will also delete <strong>@Model.Products.Count</strong> product(s) and their images.</p>
+    }
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4>@Model.Name</h4>
+        <p><strong>Description:</strong> @Model.Description</p>
+        @if (Model.Products.Any())
+        {
+            <h5>Products in this category:</h5>
+            <ul>
+                @foreach (var p in Model.Products)
+                {
+                    <li>@p.Name - @p.Price.ToString("C")</li>
+                }
+            </ul>
+        }
+    </div>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger mt-3">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+</form>
