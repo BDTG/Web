@@ -136,7 +136,7 @@ public static class DbInitializer
                 CreatedAt = DateTime.UtcNow,
                 Images = new List<ProductImage>
                 {
-                    new() { Url = "/images/ipad.jpg", IsPrimary = true }
+                    new() { Url = "/images/ipad-pro-m4.webp", IsPrimary = true }
                 }
             }
         };
