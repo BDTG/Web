@@ -76,7 +76,7 @@ public static class DbInitializer
                 CreatedAt = DateTime.UtcNow,
                 Images = new List<ProductImage>
                 {
-                    new() { Url = "/images/iphone15.jpg", IsPrimary = true }
+                    new() { Url = "/images/iphone15.webp", IsPrimary = true }
                 }
             },
             new Product
@@ -100,7 +100,7 @@ public static class DbInitializer
                 CreatedAt = DateTime.UtcNow,
                 Images = new List<ProductImage>
                 {
-                    new() { Url = "/images/macbook.jpg", IsPrimary = true }
+                    new() { Url = "/images/macbook.png", IsPrimary = true }
                 }
             },
             new Product
@@ -112,7 +112,7 @@ public static class DbInitializer
                 CreatedAt = DateTime.UtcNow,
                 Images = new List<ProductImage>
                 {
-                    new() { Url = "/images/dellxps.jpg", IsPrimary = true }
+                    new() { Url = "/images/dellxps.webp", IsPrimary = true }
                 }
             },
             new Product
